@@ -2,7 +2,7 @@ import { Canvas, useFrame, useThree} from '@react-three/fiber'
 import './App.css'
 import Experience from './components/Experience'
 import Navbar from './components/Navbar'
-import { Environment, Html,  Stars } from '@react-three/drei'
+import { Environment, Html,  Loader,  Stars } from '@react-three/drei'
 import Interface from './components/Interface'
 import { Mon } from './components/Mon'
 import { OrbitControls } from '@react-three/drei'
@@ -32,6 +32,7 @@ function App() {
         <Mon/>
         <Environment preset="city" />
       </Canvas>
+      <Loader/>
     </>
   )
 }
